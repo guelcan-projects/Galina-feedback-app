@@ -1,13 +1,13 @@
 # Build the backend app container
 docker build \
-    -t feedback-app:v4.5 \
-    -t feedback-app:latest \
-    -t galaataman/feedback-app:v4.5 \
-    -t galaataman/feedback-app:latest .
+    -t g-feedback-app:v4.0 \
+    -t g-feedback-app:latest \
+    -t gulcan82/g-feedback-app:v4.0 \
+    -t gulcan82/g-feedback-app:latest .
 
 # Push the images to the Docker Hub
-docker push galaataman/feedback-app:v4.5
-docker push galaataman/feedback-app:latest
+docker push gulcan82/g-feedback-app:v4.0
+docker push gulcan82/g-feedback-app:latest
 
 # Create a docker network for the app
 docker network create feedback-app-nw
