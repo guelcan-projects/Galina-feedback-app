@@ -26,7 +26,7 @@ docker run \
 
 # Run the backend app container
 docker run \
-    --name feedback-app \
+    --name g-feedback-app \
     --network feedback-app-nw \
     -p 3030:3000 \
     -e DB_USER=postgres \
@@ -36,7 +36,7 @@ docker run \
     -e DB_PORT=5432 \
     -d \
     --rm \
-    feedback-app
+    g-feedback-app
 
 # Stop the containers
 docker stop feedback-app postgres-db
